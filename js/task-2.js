@@ -1,6 +1,5 @@
-function getShippingMessage(country, price, deliveryFee) {
-    let totalPrice = deliveryFee + price;
-    return `Shipping to ${country} will cost ${totalPrice} credits`;
+function formatMessage(message, maxLength) {
+    return message.slice(0, maxLength)
 }
 
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
